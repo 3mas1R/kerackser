@@ -40,3 +40,6 @@ class LicenseClient
 
         $data = json_decode($response->getBody(), true);
 
+        return $data;
+    }
+}
