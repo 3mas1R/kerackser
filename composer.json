@@ -1,0 +1,14 @@
+{
+    "name": "kerackser/license-client",
+    "description": "Una biblioteca de cliente para validar licencias en proyectos de Laravel.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Kerackser\\LicenseClient\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2.0",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
