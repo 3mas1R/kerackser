@@ -25,7 +25,7 @@ class LicenseClientServiceProvider extends ServiceProvider
     {
         // Publicar archivo de configuración
         $this->publishes([
-            __DIR__ . '/../config/license_client.php' => config_path('license_client.php'),
+            __DIR__ . '/path/to/config/license_client.php' => config_path('license_client.php'),
         ], 'config');
 
         // Registrar middleware CheckLicense
