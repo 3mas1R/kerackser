@@ -2,6 +2,7 @@
 
 namespace Kerackser\LicenseClient;
 
+use Kerackser\LicenseClient\Contracts\LicenseValidatorInterface;
 use GuzzleHttp\Client;
 
 class LicenseClient
