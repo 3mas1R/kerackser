@@ -22,22 +22,21 @@ class LicenseClient
         $response = $this->httpClient->post('/api/validate-license', [
             'json' => [
                 'license_key' => $licenseKey,
+                'api_key' => $this->config['api_key'],
             ],
         ]);
-
-        $data = json_decode($response->getBody(), true);
-
-        return $data['valid'];
+    
+        // ...
     }
-
+    
     public function getLicenseStatus($licenseKey)
     {
         $response = $this->httpClient->post('/api/get-license-status', [
             'json' => [
                 'license_key' => $licenseKey,
+                'api_key' => $this->config['api_key'],
             ],
         ]);
-
         $data = json_decode($response->getBody(), true);
 
         return $data;
